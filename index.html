@@ -546,50 +546,64 @@
     </footer>
     <div class="backdrop is-open">
       <div class="modal">
-        <button type="button">
-          <svg class="" width="8" height="8">
+        <button class="close-btn" type="button">
+          <svg class="icon-form-close" width="8" height="8">
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
 
-        <p>Leave your contacts and we will call you back</p>
-        <form>
-          <div>
-            <label for="user-name">Name</label>
-          </div>
-          <div>
-            <input type="text" name="user-name" id="user-name" />
-            <svg width="12" height="12">
-              <use href="./images/icons.svg#icon-name"></use>
-            </svg>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="form-field">
+            <label class="field-descr" for="user-name">Name</label>
+
+            <div class="field">
+              <input
+                class="classic-field"
+                type="text"
+                name="user-name"
+                id="user-name"
+              />
+              <svg class="icon-form" width="12" height="12">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
           </div>
 
-          <div>
-            <label for="phone">Phone</label>
-          </div>
-          <div>
-            <input type="tel" name="phone" id="phone" pattern="^/d+$" />
-            <svg width="12" height="12">
-              <use href="./images/icons.svgz#icon-phone"></use>
-            </svg>
+          <div class="form-field">
+            <label class="field-descr" for="phone">Phone</label>
+
+            <div class="field">
+              <input
+                class="classic-field"
+                type="tel"
+                name="phone"
+                id="phone"
+                pattern="^/d+$"
+              />
+              <svg class="icon-form" width="12" height="12">
+                <use href="./images/icons.svgz#icon-phone"></use>
+              </svg>
+            </div>
           </div>
 
-          <div>
+          <div class="form-field">
             <label for="email">Email</label>
-          </div>
-          <div>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-            />
-            <svg width="12" height="12">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+
+            <div class="form-field">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              />
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
 
-          <div>
+          <div class="form-field last">
             <label for="user-comment">Comment</label>
             <textarea
               name="user-comment"
@@ -597,7 +611,8 @@
               placeholder="text input"
             ></textarea>
           </div>
-          <div>
+
+          <div class="accept">
             <input
               type="checkbox"
               id="user-privacy"
@@ -615,7 +630,7 @@
               <a href="">Privacy Policy</a>
             </label>
           </div>
-          <button type="submit" name="submit">Send</button>
+          <button class="send-btn" type="submit" name="submit">Send</button>
         </form>
       </div>
     </div>
